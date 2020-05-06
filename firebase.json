@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "deakan",
+      "public": "dist/deakan",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "ng-zoom-f8263": {
+      "hosting": {
+        "deakan": [
+          "ng-zoom-f8263"
+        ]
+      }
+    }
+  }
+}
