@@ -1,0 +1,7 @@
+<div *ngIf="girl; else notFound">
+  <p>{{ girl.name }}</p>
+</div>
+
+<ng-template #notFound>
+  <p>見つかりませんでした</p>
+</ng-template>

@@ -1,0 +1,15 @@
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <mat-form-field>
+    <mat-label>名前</mat-label>
+    <input
+      type="text"
+      formControlName="name"
+      matInput
+      autocomplete="off"
+      required
+    />
+  </mat-form-field>
+  <button mat-raised-button color="primary" [disabled]="form.invalid">
+    送信
+  </button>
+</form>
