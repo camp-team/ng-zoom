@@ -1,4 +1,16 @@
-<header></header>
+<mat-toolbar>
+  <button mat-button>My App</button>
+  <span class="spacer"></span>
+
+  <div class="search">
+    <input class="search__input" type="text" autocomplete="off" />
+    <mat-icon class="search__icon">search</mat-icon>
+  </div>
+
+  <button mat-icon-button>
+    <mat-icon>person</mat-icon>
+  </button>
+</mat-toolbar>
 
 <router-outlet></router-outlet>
 
