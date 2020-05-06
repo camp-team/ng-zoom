@@ -1,5 +1,5 @@
 <mat-toolbar>
-  <button mat-button>My App</button>
+  <button mat-button routerLink="/">My App</button>
   <span class="spacer"></span>
 
   <div class="search">
@@ -7,7 +7,7 @@
     <mat-icon class="search__icon">search</mat-icon>
   </div>
 
-  <button mat-icon-button>
+  <button mat-icon-button (click)="deleteMasami2()">
     <mat-icon>person</mat-icon>
   </button>
 </mat-toolbar>

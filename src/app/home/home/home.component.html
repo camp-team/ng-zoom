@@ -1,0 +1,52 @@
+<nav mat-tab-nav-bar>
+  <a
+    mat-tab-link
+    *ngFor="let link of navLinks"
+    [routerLink]="link.path"
+    routerLinkActive
+    #rla="routerLinkActive"
+    [active]="rla.isActive"
+  >
+    {{ link.label }}
+  </a>
+</nav>
+<router-outlet></router-outlet>
+<!-- <mat-tab-group>
+  <mat-tab label="友達">
+    <div class="grid">
+      <mat-card *ngFor="let girl of girls">
+        <mat-card-header>
+          <mat-card-title>{{ girl.name }}</mat-card-title>
+          <mat-card-subtitle>{{ girl.job }}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image [src]="girl.photoURL" alt="" />
+        <mat-card-content>
+          <dl>
+            <dt>ニックネーム</dt>
+            <dd>{{ girl.nickName }}</dd>
+            <dt>生年月日</dt>
+            <dd>{{ girl.birthDay }}</dd>
+          </dl>
+        </mat-card-content>
+        <mat-card-actions>
+          <button
+            mat-flat-button
+            [routerLink]="['/person', girl.id]"
+            color="primary"
+          >
+            詳細
+          </button>
+          <button
+            mat-button
+            [routerLink]="['/edit']"
+            [queryParams]="{ id: girl.id }"
+          >
+            編集
+          </button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </mat-tab>
+  <mat-tab label="彼女"> Content 2 </mat-tab>
+  <mat-tab label="Tinder"> Content 3 </mat-tab>
+</mat-tab-group> -->
